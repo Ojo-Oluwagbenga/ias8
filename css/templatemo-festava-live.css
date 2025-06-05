@@ -596,6 +596,8 @@ strong {
   border-radius: var(--border-radius-medium);
   display: block;
   width: 100%;
+  object-fit: cover;
+  min-height: 600px;
 }
 
 .artists-thumb .artists-hover {
