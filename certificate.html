@@ -37,6 +37,7 @@
   <style>
     .imagehold{
         opacity: 0.3;
+        width: 100vw;
     }
     #page-section{
         position: relative;
@@ -59,13 +60,13 @@
 
     }
     .the_name{
-        opacity: 0.3;
-        font-family: "Roboto", sans-serif;
-        position: absolute;
-        top: 43%;
-        left: 5%;
-        color: rgb(49, 49, 49);
-        font-size: 300%;
+      opacity: 0.3;
+      font-family: "Roboto", sans-serif;
+      position: absolute;
+      top: 43%;
+      left: 3vw;
+      color: rgb(78 78 78);
+      font-size: 25px;
     }
   </style>
 
@@ -111,6 +112,8 @@
         }).catch(error => {})
     }
     function downloadImage() {
+      let element_ = document.getElementById('buttonh');
+                element_.style.opacity = "0";
         if (!dl){
             alert("Details not yet fetched!");
             return
@@ -126,6 +129,7 @@
         link.download = `${_name}'s IAS Certificate.jpg`;
         link.href = canvas.toDataURL('image/jpeg', 0.95);
         link.click();
+        element_.style.opacity = "1";
       });
     }
     fetchName()
