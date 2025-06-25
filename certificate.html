@@ -18,19 +18,21 @@
 </head>
 <body>
 
-  <button id="buttonh" onclick="downloadImage()">Download Certificate</button>
 
   <div id="page-section">
     <img class="imagehold" src="images/IMG-20250623-WA0192.jpg" alt="" crossorigin="anonymous">
     <span class="the_name">Loading Document...</span>
-    <span class="loading" style="    position: absolute;
+    <button id="buttonh" onclick="downloadImage()">Download Certificate</button>
+
+    <!-- <span class="loading" style="    position: absolute;
     font-size: 40px;
     bottom: 61%;
     background-color: #545454;
     left: calc(50% - 211px);
     padding: 10px 40px;
     border-radius: 15px;
-    color: white;">Loading Document...</span>
+    color: white;">Loading Document...</span> -->
+
   </div>
   <style>
     .imagehold{
@@ -40,11 +42,11 @@
         position: relative;
     }
     #buttonh{
-        position: fixed;
-        width: 80vw;
-        bottom: 40px;
+        position: absolute;
+        width: 90%;
+        bottom: 50px;
         z-index: 2;
-        left: 10vw;
+        left: 5%;
         background-color: blue;
         padding: 10px;
         border: none;
