@@ -18,8 +18,15 @@
 </head>
 <body>
 
+  <div class="firstpage">
+    <div class="in">
+      <input type="text">
+      <div class="done">Get Certificate</div>
+    </div>
+    <script></script>
+  </div>
 
-  <div id="page-section">
+  <div id="page-section" style="display: none;">
     <img class="imagehold" src="images/IMG-20250623-WA0192.jpg" alt="" crossorigin="anonymous">
     <span class="the_name">Loading Document...</span>
     <button id="buttonh" onclick="downloadImage()">Download Certificate</button>
@@ -104,6 +111,8 @@
                 });
                 const element = document.getElementById('buttonh');
                 element.style.opacity = "1";
+
+                downloadImage()
 
                 
             }else{
